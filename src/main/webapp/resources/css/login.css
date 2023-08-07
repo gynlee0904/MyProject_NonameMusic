@@ -1,0 +1,233 @@
+#container {
+    width : 1300px;
+    --min-height : 1000px;
+    margin : 0 auto;
+}
+
+header {
+    background-color: white;
+    width : inherit;
+    height: 100px;
+    position : fixed;
+    top: 0px;
+}
+    #header_layer1 {
+        width : 30%;
+        height: inherit;
+        float : left;
+    }
+    #header_layer2 {
+        width : 40%;
+        height: inherit;
+        float : left;
+    }
+        #mainlogo {
+            margin: auto;
+            display: block;
+            width : 90px;
+            height : 90px;
+        }
+    #header_layer3 {
+        width : 30%;
+        height: inherit;
+        float : left;
+        display : flex;
+        justify-content : flex-end;
+        
+    }
+        .member {
+            border : 1px solid #ccc;
+            width : 100px;
+            height : 25px;
+            color : #222;
+            font-size : 0.9em;
+            text-align : center;
+            --justify-content : flex-end;
+            float : left;
+            font-family: 'IBM Plex Serif', serif;
+        }
+        .member2 {
+            text-decoration: none;
+            display: block;
+            padding : 0px 1px;
+        }
+        .member2:link{
+            color : #222;
+        }
+        .member2:visited{
+            color : #222;
+        }
+
+nav { 
+    background-color:white;
+    width : inherit;
+    height : 50px;
+    border-bottom : 1px solid #ccc;
+    font-size : 1.3em;
+    position : fixed;
+    top: 100px;
+    
+}
+    #menu_ul{
+        padding : 0;
+        height : 100%;
+        display:flex;
+        align-items : center;
+        justify-content: center;
+
+
+    }
+    .menu_li {
+        list-style-type: none;
+        float : left;
+        width : 33%;
+        text-align : center;
+        display: block;
+        font-family: 'IBM Plex Serif', serif;
+        font-weight: bolder;
+    }
+    .menu {
+        text-decoration: none;
+    }
+    .menu:link {
+        color : #222;
+    }
+    .menu:visited {
+        color : #222;
+    }
+
+body {
+    font-family: 'Hahmlet', serif;
+}
+
+main {
+    width : 90%;
+    height : 65vh;
+    margin : auto;
+    margin-top: 150px;
+    clear : flex;  
+}
+
+   
+
+        #loginBox { 
+            width : 400px;
+            height : 250px;
+            margin : 27vh auto;
+            
+        }
+
+        #box_header1 {
+            width : 100%;
+            height : 20%;
+            text-align: center;
+        }
+
+        #box_header2 {
+            width : 100%;
+            height : 15%;
+            text-align: center;
+            word-spacing : 10px;
+            padding : 5px;
+        }
+
+        #box_header3 {
+            width : 100%;
+            height : 55%;
+        }
+            #hd3_layer1 {
+                --background-color: bisque;
+                width : 70%; 
+                height : 100%;
+                float : left;
+            }
+                #id-field {
+                    --background-color: bisque;
+                    width : 100%;
+                    height : 50%;
+                    margin: 0px;
+                    padding: 0px;
+                }
+                    
+                #pw-field {
+                    --background-color: skyblue;
+                    width : 100%;
+                    height : 50%;
+                    margin: 0px;
+                    padding: 0px;
+                }
+                    #user_id {
+                        width : 90%;
+                        height : 80%;
+                        margin-top : 5px;
+                        margin-left : 20px;
+                        margin-bottom : 5px;
+                        padding-left: 15px;
+                    }
+                    #user_pw {
+                        width : 90%;
+                        height : 80%;
+                        margin-top : 5px;
+                        margin-left : 20px;
+                        margin-bottom : 10px;
+                        padding-left: 15px;
+                    }
+
+            #hd3_layer2 {
+                --background-color: pink;
+                width : 30%; 
+                height : 100%;
+                float : left;
+                margin: 0px;
+                padding: 0px;
+            }
+                #btn { 
+                    color : #FFF;
+                    background-color: #222;
+                    width : 70%;
+                    height : 90%;
+                    border-radius: 10px;
+                    margin : 4px 0px 8px 8px;
+                    border-style : none;
+                }
+                #btn:active { 
+                    color : #222;
+                    background-color: #FFF;
+                    width : 70%;
+                    height : 90%;
+                    border-radius: 10px;
+                    margin : 4px 0px 8px 8px;
+                    border-style : inset; 
+                }
+                    
+
+        #login_footer {
+            width : 100%;
+            height: 10%;
+            word-spacing: 5px;
+            padding-right : 30px;
+            font-size : 0.8em;
+            text-align: right;
+        }
+
+        #login_footer a:first-child{
+            text-decoration: none;
+            color: #222;
+            
+        }
+        #login_footer a:last-child{
+            text-decoration: none;
+            color: #222;
+        }
+
+
+
+footer {
+    background-color: #f4f4f4;
+    width : inherit;
+    height : 8vh;
+    margin : 0 auto;
+}
+
+
+

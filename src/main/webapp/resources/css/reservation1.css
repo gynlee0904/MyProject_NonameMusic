@@ -1,0 +1,523 @@
+#container {
+    width : 1300px;
+    --min-height : 1000px;
+    margin : 0 auto;
+}
+/* 1. 헤더, 나브 높이 vh로 설정  => 관둠  */ 
+/*  높이 픽셀로 고정  */
+header {
+    background-color: white;
+    width : inherit;
+    height: 100px;
+    position : fixed;
+    top: 0px;
+}
+    #header_layer1 {
+        width : 30%;
+        height: inherit;
+        float : left;
+    }
+    #header_layer2 {
+        width : 40%;
+        height: inherit;
+        float : left;
+    }
+        #mainlogo {
+            margin: auto;
+            display: block;
+            width : 90px;
+            height : 90px;
+        }
+    #header_layer3 {
+        width : 30%;
+        height: inherit;
+        float : left;
+        display : flex;
+        justify-content : flex-end;
+        
+    }
+        .member {
+            border : 1px solid #ccc;
+            width : 100px;
+            height : 25px;
+            color : #222;
+            font-size : 0.9em;
+            text-align : center;
+            --justify-content : flex-end;
+            float : left;
+            font-family: 'IBM Plex Serif', serif;
+        }
+        .member2 {
+            text-decoration: none;
+            display: block;
+            padding : 0px 1px;
+        }
+        .member2:link{
+            color : #222;
+        }
+        .member2:visited{
+            color : #222;
+        }
+
+nav { 
+    background-color:white;
+    width : inherit;
+    height : 50px;
+    border-bottom : 1px solid #ccc;
+    font-size : 1.3em;
+    position : fixed;
+    top: 100px;
+    
+}
+    #menu_ul{
+        padding : 0;
+        height : 100%;
+        display:flex;
+        align-items : center;
+        justify-content: center;
+
+
+    }
+    .menu_li {
+        list-style-type: none;
+        float : left;
+        width : 33%;
+        text-align : center;
+        display: block;
+        font-family: 'IBM Plex Serif', serif;
+        font-weight: bolder;
+    }
+    .menu {
+        text-decoration: none;
+    }
+    .menu:link {
+        color : #222;
+    }
+    .menu:visited {
+        color : #222;
+    }
+
+body { 
+    font-family: 'Hahmlet', serif;
+}
+main {
+    width : 90%;
+    --height : 100vh;
+    margin : auto;
+    margin-top: 150px;
+}
+
+    #main_layer1 { 
+        width : 1300px;
+        height : 270px;;
+        border-bottom : 1px solid #ccc;
+
+    }
+        #main1-1 {
+            width : 585px;
+            height : 100%;
+            float: left;
+        }
+            #thumbnail {
+                width :225px;
+                height :225px;
+                border-color: #ccc;
+                margin-left: 13vw;
+                margin-top: 20px;
+                border-radius: 10px;
+                border : 1px dotted #ccc;
+
+            }
+            /* .heart {
+                cursor : pointer;
+            } */
+
+        #main1-2 {
+            width : 55%;
+            height : 100%;
+            float: left;
+        }
+
+            #maintitle {
+                width : 100%;
+                height: 25%;
+            }
+            .clsName{
+                float : left;
+            }
+            b {
+                font-size : 3em;
+            }
+
+            /* .heart {
+                    width : 2.5em;
+                    height: 2.5em;
+                    margin: 20px 0 0 10px;
+                } */
+
+            /* 찜버튼 */
+            a{
+                text-decoration:none; color:inherit; cursor: pointer;
+            }
+            .right_area {
+                float : left;
+                margin-top : 25px;
+                display: flex;
+                align-items: flex-end;
+                --justify-content: center;
+                width: calc(100vw * (40 / 1920));
+                height: calc(100vw * (40 / 1920));
+                --border-radius: 50%;
+                --border: solid 2px #eaeaea;
+                --background-color: #fff;
+            }
+            
+            .icon.heart img{
+                width: calc(100vw * (40 / 1920));
+                height: calc(100vw * (40 / 1920));
+            }
+
+            .icon.heart.fas{
+                color:red
+            }
+            .heart{
+                transform-origin: center;
+            }
+            .heart.active img{
+                animation: animateHeart .3s linear forwards;
+            }
+            
+            @keyframes animateHeart{
+                0%{transform:scale(.2);}
+                40%{transform:scale(1.2);}
+                100%{transform:scale(1);}
+            }
+            /* 찜버튼 */
+
+            #info_list{
+                margin-top: 20px;
+            }
+                
+            .info_li {
+                margin-top:15px;
+                margin-left : 20px;
+                line-height: 10px;
+            }
+
+                /* #base3 {
+                    height : 20%;
+                    margin-left : 0px;
+                    padding : 0;
+                    float : left;
+                
+                } */
+                #starScr {
+                    letter-spacing:-4px;
+
+                }
+                #reviewCnt {
+                    padding-left : 5px;
+                }
+                #reviewBtn{
+                    float :left;
+                }
+                #rv_btn{
+                    background-color: #FFD93D;
+                    color : #fff;
+                    font-weight: bold;
+                    border : none;
+                    border-radius: 3px;;
+                    width : 50px;
+                    height: 20px;
+                    margin-left : 5px;
+                    cursor: pointer;
+                }
+
+                #reserve_btn {
+
+                    width: 180px;
+                    height: 50px;
+                    color : #FFF;
+                    background-color: #222;
+                    border-radius: 5px;
+                    font-size: 1em;
+                    border-style : solid;
+                    margin-right : 5px;
+                    display :inline-block;
+                }
+                #reserve_btn:active { 
+                    width: 180px;
+                    height: 50px;
+                    color : #222;
+                    background-color: #fff;
+                    border-radius: 5px;
+                    font-size: 1em;
+                    border-style : inset; 
+                    margin-right : 5px;
+                    display :inline-block;
+                }
+    
+                #ask_btn {
+                    width: 180px;
+                    height: 50px;
+                    color : black;
+                    background-color: #ccc;
+                    border-radius: 5px;
+                    font-size: 1em;
+                    border : 1px none;
+                    margin-left : 5px;
+                    display :inline-block;
+                }
+                #ask_btn:active {
+                    width: 180px;
+                    height: 50px;
+                    color : black;
+                    background-color: #fff;
+                    border-radius: 5px;
+                    font-size: 1em;
+                    border-style : inset; 
+                    margin-left : 5px;
+                    display :inline-block;
+                }
+
+    #main_layer2 {
+        height : 50%;
+    }
+        .sec2-1 {
+            width :100%;
+            height : 50%;
+        }
+
+            .teacher {
+                float :left;
+                width : 45%;
+                height : 100%;
+                padding  : 2vw;
+                display: flex;
+                justify-content: flex-end;
+            }   
+            .class_content {
+                float :left;
+                width : 55%;
+                height : 100%;
+                padding : 2vw 0 0 3vw;
+            }
+
+
+    #main_layer3 {
+            height : 50%;
+    }
+            #main_sec3 {
+                margin : 0;
+                padding-top : 3vw
+            }   
+                #main_sec3_1 {
+                    width : 50%;
+                    float :left; 
+                    padding-top : 2vw
+                }
+                    #scr_review{
+                        --float :left; 
+                        --width : 45%;
+                        width : 100%;
+                        height : 180px;
+                        line-height: 50px;
+                        padding-right : 50px;
+                        border-right : 1px solid #ccc;
+                    }
+                        #bigScr {
+                            font-size : 1em;
+                            display: flex;
+                            justify-content: flex-end;
+                        }
+                        #bigstar {
+                            font-size : 3em;
+                            color : #FFD93D;
+                            letter-spacing:-4px;
+                            display: flex;
+                            justify-content: flex-end;
+                            
+                        }
+                        #bigScr2 {
+                            font-size : 1.5em;
+                            display: flex;
+                            justify-content: flex-end;
+                        }
+                            #big_scr {
+                                font-size: 1.5em;
+                                padding : 0.5vw;
+                            }
+                            #count {
+                                font-size: 0.8em;
+                                padding-top : 15px;
+                                --margin: 20px;;
+                                display: flex;
+                                justify-content: flex-end;
+                            }
+                            
+                #main_sec3-2 {
+                    width : 50%;
+                    float :left;
+                    padding-top : 2vw
+                }
+                    .rkw{
+                        width: 90px;
+                        height :90px;
+                        border : 2px solid gray;
+                        border-radius: 100px;
+                    }
+                    
+                    #pht_preview1, #pht_preview2 {
+                        float :left; 
+                        display:block;
+                        width : 90px;
+                        height : 180px;
+                        --padding-left : 50px;
+                        margin: 10px 10px 10px 20px;
+                    }
+                    
+
+                    #txt_review {
+                        width : 80%;
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                        margin-left : 150px;
+                        
+                        
+        
+                    }
+                        #review_ul {
+                            margin: 0;
+                            padding: 0;
+                            height: 100%;
+                            text-align: left;
+                        }
+                            .review_li {
+                                list-style-type: none;
+                                width : 100%;
+                                --padding: 20px;
+                                line-height: 25px;
+                                margin : 50px;
+        
+                            }
+                                .revw {
+                                    display: flex;
+                                    justify-content: center;
+                                }
+                                
+                                    .photo{
+                                        float :left;  
+                                        width: 100px;
+                                        height :100px;
+                                    }
+    
+                                    .text {
+                                        float :left;
+                                        padding-left : 50px;
+        
+                                    }
+                                        .rv_star {
+                                            letter-spacing:-4px;
+                                        }
+                                        .rv_content {
+                                            text-align: left;
+                                        }
+                                        .rv_date {
+                                            color : gray;
+        
+                                        }
+                    
+                            #write_rvw {
+                                float : left;
+                            }
+                            #textarea {
+                                width : 300px;
+                                height : 100px;
+                                resize : none;
+                                /* textarea 사이즈고정*/
+                                outline : none; 
+                                 /* textarea 킃릭시 테두리 제거 */
+                            }
+                            .review_btn {
+                                float : left;
+    
+                                display: flex;
+                                justify-content: flex-end;
+                            }
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    #main_layer4 {
+        height : 10%;
+        text-align: center;
+        border-bottom : 1px solid #ccc;
+        --padding-bottom: 50px;
+    }
+    #submit_btn {
+        color : #FFF;
+        background-color: #222;
+        width : 220px;
+        height : 60px;
+        border-radius: 5px;
+        text-align: center;
+        font-size : 1.2em;
+        margin : 30px auto;
+        border-style : solid;
+        font-family: 'Hahmlet', serif;
+    }
+    #submit_btn:active {
+        color : #222;
+        background-color: #FFF;
+        width : 220px;
+        height : 60px;
+        border-radius: 5px;
+        text-align: center;
+        font-size : 1em;
+        margin : 30px auto;
+        border-style : inset; 
+        font-family: 'Hahmlet', serif;
+    }
+    #main_layer5 {
+        height : 20%;
+        padding : 10px;
+        --text-align: center;
+        color : gray;
+        
+    }
+    #caution{
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 30px;
+    }
+    .caution {
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .caution2 {
+        line-height: 30px;
+    }
+
+
+
+footer {
+    background-color: #f4f4f4;
+    width : inherit;
+    height : 8vh;
+    margin : 0 auto;
+}
+
+
+

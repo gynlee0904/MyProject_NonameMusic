@@ -1,0 +1,365 @@
+#container {
+    width : 1300px;
+    --min-height : 1000px;
+    margin : 0 auto;
+}
+/* 1. 헤더, 나브 높이 vh로 설정  => 관둠  */ 
+/*  높이 픽셀로 고정  */
+header {
+    background-color: white;
+    width : inherit;
+    height: 100px;
+    position : fixed;
+    top: 0px;
+}
+    #header_layer1 {
+        width : 30%;
+        height: inherit;
+        float : left;
+    }
+    #header_layer2 {
+        width : 40%;
+        height: inherit;
+        float : left;
+    }
+        #mainlogo {
+            margin: auto;
+            display: block;
+            width : 90px;
+            height : 90px;
+        }
+    #header_layer3 {
+        width : 30%;
+        height: inherit;
+        float : left;
+        display : flex;
+        justify-content : flex-end;
+        
+    }
+        .member {
+            border : 1px solid #ccc;
+            width : 100px;
+            height : 25px;
+            color : #222;
+            font-size : 0.9em;
+            text-align : center;
+            --justify-content : flex-end;
+            float : left;
+            font-family: 'IBM Plex Serif', serif;
+        }
+        .member2 {
+            text-decoration: none;
+            display: block;
+            padding : 0px 1px;
+        }
+        .member2:link{
+            color : #222;
+        }
+        .member2:visited{
+            color : #222;
+        }
+
+nav { 
+    background-color:white;
+    width : inherit;
+    height : 50px;
+    border-bottom : 1px solid #ccc;
+    font-size : 1.3em;
+    position : fixed;
+    top: 100px;
+    
+}
+    #menu_ul{
+        padding : 0;
+        height : 100%;
+        display:flex;
+        align-items : center;
+        justify-content: center;
+
+
+    }
+    .menu_li {
+        list-style-type: none;
+        float : left;
+        width : 33%;
+        text-align : center;
+        display: block;
+        font-family: 'IBM Plex Serif', serif;
+        font-weight: bolder;
+    }
+    .menu {
+        text-decoration: none;
+    }
+    .menu:link {
+        color : #222;
+    }
+    .menu:visited {
+        color : #222;
+    }
+
+body {
+    font-family: 'Hahmlet', serif;
+}
+
+main {
+    width : 90%;
+    min-height : 900px;
+    margin : auto;
+    margin-top: 150px;
+    overflow: hidden; ;
+}
+
+
+
+    #main_layer1 {
+        width : 1170px;
+        height : 180px;
+        border-bottom : 1px solid #ccc;
+        position: fixed;
+        top: 150px;
+        background-color: white;
+        margin: auto;
+    }
+        #main_title {
+            --background-color: lightblue;
+            width : 100%;
+            height : 40%;
+            text-align : center;
+            padding : 30px 10px 10px 0px;
+        }
+        
+        #profile1 {
+            --background-color: pink;
+            width : 40%;
+            height : 60%;
+            float : left;
+            display : flex;
+            justify-content : flex-end;
+            padding-right : 0px;
+
+        }
+            #mypicture {
+                width : 120px;
+                height : 100%;
+                padding: 10px 10px;
+            }
+        #profile2 {
+            width : 30%;
+            height : 60%;
+            float : left;
+            padding : 20px 20px 20px 40px;
+            line-height: 25px;
+            
+        }
+        
+        #name {
+        letter-spacing: 10px;
+        }
+
+        #profile3 {
+            width : 30%;
+            height : 60%;
+            float : left;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+
+
+        }
+            #findPw_btn{
+                width : 85px;
+                height: 25px;
+                border-radius: 4px;
+                color : #FFF;
+                background-color: #222;
+                font-size : 0.7em;
+                margin : 0 10px 10px 0px;
+                
+
+            }
+
+            #findPw_btn:active { 
+                color : #222;
+                background-color: #FFF;
+
+            }
+            
+            #delete_btn{
+                width : 85px;
+                height: 25px;
+                border-radius: 4px;
+                color : #FFF;
+                background-color: #222;
+                font-size : 0.7em;
+                margin : 0 20px 10px 0px;
+                
+
+            }
+
+            #delete_btn:active { 
+                color : #222;
+                background-color: #FFF;
+
+            }
+            
+
+
+    #main_layer2 {        
+        width : 100%;
+        height : 500px;
+        margin-top: 185px;
+
+    }
+        #current {
+            width : 100%;
+            height : 30%;
+
+        }
+            #current1 {
+                width : 35%;
+                height : 100%;
+                float : left;
+            }
+                .head {
+                    margin : 20px 10px 0 0;
+                    display : flex;
+                    justify-content: flex-end;
+                    
+
+                }
+            #current2 { 
+                width : 65%;
+                height : 100%;
+                float : left;
+            }
+                .cur_ul {
+                    margin : 15px 5px 0px 20px;
+                    padding : 3px;
+                    height : 100%;
+                }
+
+                .cur_li {
+                    list-style-type: none;
+                    text-align: left;
+                    line-height: 25px;
+                    margin-left : 10px;
+                    padding-left : 10px;
+                    background-color: #fff;
+                    color : #222;
+                    
+                }
+
+                .cur_a {
+                    text-decoration: none;
+                }
+                .cur_a:link {
+                    color : #222
+                }
+                .cur_a {
+                    color : #222
+                }
+
+
+
+        #choice {
+            --background-color: pink;
+            width : 100%;
+            height : 30%;
+
+        }
+            #choice1 {
+                width : 35%;
+                height : 100%;
+                float : left;
+
+            }
+            #choice2 {
+                width : 20%;
+                height : 100%;
+                float : left;
+                
+            }
+            #choice3 {
+                width : 45%;
+                height : 100%;
+                float : left; 
+            }
+
+        #intro {
+            
+            width : 100%;
+            height : 30%;
+        }
+            #intro1 { 
+                width : 35%;
+                --height : 100%;
+                float : left;
+
+            }
+            #intro2 { 
+                width : 65%;
+                --height : 100%;
+                float : left;
+                
+            }
+            
+            
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+                #textarea{
+                    width : 430px;
+                    height : 200px;
+                    border : 2px solid #CCC;
+                    opacity : none;
+                    border-radius: 5px;
+                    margin : 20px 0px 0px 30px;
+                    padding : 5px;
+                    resize : none;
+                    outline : none; 
+                    /* textarea 킃릭시 테두리 제거 */
+                    font-family: 'Noto Sans KR', sans-serif;
+
+                }
+                
+
+        #btn {
+            --background-color: lightgoldenrodyellow;
+            text-align: center;
+            width : 100%;
+            height : 5vh;
+
+            
+        }
+            #modify_btn { 
+                color : #FFF;
+                background-color: #222;
+                width : 115px;
+                height : 40px;
+                border-radius: 5px;
+                text-align: center;
+                margin : 30px auto;
+                border-style : solid;
+
+
+
+            }
+            #modify_btn:active { 
+                color : #222;
+                background-color: #FFF;
+                width : 115px;
+                height : 40px;
+                border-radius: 5px;
+                text-align: center;
+                margin : 30px auto;
+                border-style : inset; 
+            }
+
+
+footer {
+    background-color: #f4f4f4;
+    width : inherit;
+    height : 8vh;
+    margin : 0 auto;
+}
+
+
+

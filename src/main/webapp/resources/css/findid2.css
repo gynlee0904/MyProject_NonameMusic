@@ -1,0 +1,206 @@
+#container {
+    width : 1300px;
+    --min-height : 1000px;
+    margin : 0 auto;
+}
+/* 1. 헤더, 나브 높이 vh로 설정  => 관둠  */ 
+/*  높이 픽셀로 고정  */
+header {
+    background-color: white;
+    width : inherit;
+    height: 100px;
+    position : fixed;
+    top: 0px;
+}
+    #header_layer1 {
+        width : 30%;
+        height: inherit;
+        float : left;
+    }
+    #header_layer2 {
+        width : 40%;
+        height: inherit;
+        float : left;
+    }
+        #mainlogo {
+            margin: auto;
+            display: block;
+            width : 90px;
+            height : 90px;
+        }
+    #header_layer3 {
+        width : 30%;
+        height: inherit;
+        float : left;
+        display : flex;
+        justify-content : flex-end;
+        
+    }
+        .member {
+            border : 1px solid #ccc;
+            width : 100px;
+            height : 25px;
+            color : #222;
+            font-size : 0.9em;
+            text-align : center;
+            --justify-content : flex-end;
+            float : left;
+            font-family: 'IBM Plex Serif', serif;
+        }
+        .member2 {
+            text-decoration: none;
+            display: block;
+            padding : 0px 1px;
+        }
+        .member2:link{
+            color : #222;
+        }
+        .member2:visited{
+            color : #222;
+        }
+
+nav { 
+    background-color:white;
+    width : inherit;
+    height : 50px;
+    border-bottom : 1px solid #ccc;
+    font-size : 1.3em;
+    position : fixed;
+    top: 100px;
+    
+}
+    #menu_ul{
+        padding : 0;
+        height : 100%;
+        display:flex;
+        align-items : center;
+        justify-content: center;
+
+
+    }
+    .menu_li {
+        list-style-type: none;
+        float : left;
+        width : 33%;
+        text-align : center;
+        display: block;
+        font-family: 'IBM Plex Serif', serif;
+        font-weight: bolder;
+    }
+    .menu {
+        text-decoration: none;
+    }
+    .menu:link {
+        color : #222;
+    }
+    .menu:visited {
+        color : #222;
+    }
+
+body {
+    font-family: 'Hahmlet', serif;
+}
+
+main {
+    width : 90%;
+    min-height : 60vh;
+    margin : auto;
+    margin-top: 150px;
+}
+    #findBox { 
+        --border: 1px solid black;
+        box-sizing : border-box;
+        width : 400px;
+        height : 250px;
+        margin : 27vh auto;
+    }
+
+    #box_header1 {
+        --border: 1px solid black;
+        width : 100%;
+        height : 20%;
+        text-align: center;
+    }
+
+    #box_header2 {
+        --border: 1px solid black;
+        width : 100%;
+        height : 80%;
+        text-align: center;
+    }
+
+        #findout { 
+            width : 100%;
+            height : 30px;
+            margin : 50px 0px 10px 0px;
+        }
+            span {
+                color : navy;
+            }
+
+        #next { 
+            margin-top : 15px;
+            text-align: center
+        }
+            #login_btn {
+                width: 115px;
+                height: 40px;
+                color : #FFF;
+                background-color: #222;
+                border-radius: 5px;
+                font-size: 1em;
+                border-style : solid;
+                margin-right : 5px;
+                display :inline-block;
+            }
+            #login_btn:active { 
+                width: 115px;
+                height: 40px;
+                color : #222;
+                background-color: #fff;
+                border-radius: 5px;
+                font-size: 1em;
+                border-style : inset; 
+                margin-right : 5px;
+                display :inline-block;
+            }
+
+            #pw_btn {
+                width: 115px;
+                height: 40px;
+                color : black;
+                background-color: #ccc;
+                border-radius: 5px;
+                font-size: 1em;
+                border : 1px none;
+                margin-left : 5px;
+                display :inline-block;
+            }
+            #pw_btn:active {
+                width: 115px;
+                height: 40px;
+                color : black;
+                background-color: #fff;
+                border-radius: 5px;
+                font-size: 1em;
+                border-style : inset; 
+                margin-left : 5px;
+                display :inline-block;
+            }
+
+
+
+
+
+
+
+
+footer {
+    background-color: #f4f4f4;
+    width : inherit;
+    height : 8vh;
+    margin : 0 auto;
+}
+
+
+

@@ -1,0 +1,240 @@
+#container {
+    width : 1300px;
+    --min-height : 1000px;
+    margin : 0 auto;
+}
+/* 1. 헤더, 나브 높이 vh로 설정  => 관둠  */ 
+/*  높이 픽셀로 고정  */
+header {
+    background-color: white;
+    width : inherit;
+    height: 100px;
+    position : fixed;
+    top: 0px;
+}
+    #header_layer1 {
+        width : 30%;
+        height: inherit;
+        float : left;
+    }
+    #header_layer2 {
+        width : 40%;
+        height: inherit;
+        float : left;
+    }
+        #mainlogo {
+            margin: auto;
+            display: block;
+            width : 90px;
+            height : 90px;
+        }
+    #header_layer3 {
+        width : 30%;
+        height: inherit;
+        float : left;
+        display : flex;
+        justify-content : flex-end;
+        
+    }
+        .member {
+            border : 1px solid #ccc;
+            width : 100px;
+            height : 25px;
+            color : #222;
+            font-size : 0.9em;
+            text-align : center;
+            --justify-content : flex-end;
+            float : left;
+            font-family: 'IBM Plex Serif', serif;
+        }
+        .member2 {
+            text-decoration: none;
+            display: block;
+            padding : 0px 1px;
+        }
+        .member2:link{
+            color : #222;
+        }
+        .member2:visited{
+            color : #222;
+        }
+
+nav { 
+    background-color:white;
+    width : inherit;
+    height : 50px;
+    border-bottom : 1px solid #ccc;
+    font-size : 1.3em;
+    position : fixed;
+    top: 100px;
+    
+}
+    #menu_ul{
+        padding : 0;
+        height : 100%;
+        display:flex;
+        align-items : center;
+        justify-content: center;
+
+
+    }
+    .menu_li {
+        list-style-type: none;
+        float : left;
+        width : 33%;
+        text-align : center;
+        display: block;
+        font-family: 'IBM Plex Serif', serif;
+        font-weight: bolder;
+    }
+    .menu {
+        text-decoration: none;
+    }
+    .menu:link {
+        color : #222;
+    }
+    .menu:visited {
+        color : #222;
+    }
+
+body {
+    font-family: 'Hahmlet', serif;
+}
+
+main {
+    height : 73vh;
+    margin : auto;
+    margin-top: 150px;
+}
+    #main_layer1 {
+        text-align: center;
+        height : 60%;
+        background-image : url(../images/piano.png);
+        --background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+    #main_layer1 {
+            background-image : url(../images/piano.png);
+            animation-name : mainImg;
+            animation-duration : 18s;
+            animation-delay : 1s;
+            animation-iteration-count: infinite;
+             /* 반복횟수지정 , infinite 무한반복  */
+        }
+    @keyframes mainImg {
+        0% {
+            background-image : url(../images/piano.png);
+        }
+        30% { 
+            background-image : url(../images/pppiano.png); 
+        }
+
+        60% {
+            background-image : url(../images/overview_division-d1_fe8a29a47bd.webp);  
+        }
+        90% {
+            background-image : url(../images/ppiano.png);             
+            }
+        100%{
+            background-image : url(../images/piano.png);
+        }
+    }
+            
+
+    #main_layer2 {
+        --background-color: tomato;
+        width : inherit;
+        height : 40%;
+
+    }
+    #review, #commu {
+        --background-color: tomato;
+        width : 25%;
+        height : 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #play {
+        --background-color: skyblue;
+        width : 50%;
+        height : 100%;
+        float: left;
+        --text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    
+
+@import url('https://fonts.googleapis.com/css2?family=Orbit&display=swap');
+        table {
+            border : 1px solid #ccc;
+            border-collapse: collapse;
+            width : 95%;
+            height : 200px;
+            --table-layout: fixed;
+            font-family: 'Orbit', sans-serif;
+            
+
+        }
+        #tbl1 {
+            margin-left : 20px;
+        }
+        #tbl2 {
+            margin-right : 20px;
+        }
+        caption {
+            text-align: left;
+            font-family: 'Hahmlet', serif;
+        }
+        td {
+            border : 1px solid #ccc;
+            
+        }
+        /* td {
+            border : 1px solid #ccc;
+        } */
+        tr>td:nth-child(1), .tbl_title {
+            background-color: #f0f0f0;
+        }
+        tr>td:nth-child(1) {
+            text-align: center;
+            width :30px;
+            font-size : 0.8em;
+        }
+        
+
+        tbody>tr>td:nth-child(2) {
+            text-align: left;
+            padding-left : 5px;
+        }
+        tbody>tr>td:nth-child(3) {
+            text-align: center;
+        }
+        thead { 
+            text-align: center;
+        }
+        .moreView {
+            font-size : 0.1em;
+            text-align: right;
+        }
+
+
+
+
+
+footer {
+    background-color: #f4f4f4;
+    width : inherit;
+    height : 8vh;
+    margin : 0 auto;
+}
+
+
+

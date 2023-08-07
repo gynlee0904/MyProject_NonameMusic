@@ -1,0 +1,516 @@
+#container {
+    width : 1300px;
+    --min-height : 1000px;
+    margin : 0 auto;
+}
+/* 1. 헤더, 나브 높이 vh로 설정  => 관둠  */ 
+/*  높이 픽셀로 고정  */
+header {
+    background-color: white;
+    width : inherit;
+    height: 100px;
+    position : fixed;
+    top: 0px;
+}
+    #header_layer1 {
+        width : 30%;
+        height: inherit;
+        float : left;
+    }
+    #header_layer2 {
+        width : 40%;
+        height: inherit;
+        float : left;
+    }
+        #mainlogo {
+            margin: auto;
+            display: block;
+            width : 90px;
+            height : 90px;
+        }
+    #header_layer3 {
+        width : 30%;
+        height: inherit;
+        float : left;
+        display : flex;
+        justify-content : flex-end;
+        
+    }
+        .member {
+            border : 1px solid #ccc;
+            width : 100px;
+            height : 25px;
+            color : #222;
+            font-size : 0.9em;
+            text-align : center;
+            --justify-content : flex-end;
+            float : left;
+            font-family: 'IBM Plex Serif', serif;
+        }
+        .member2 {
+            text-decoration: none;
+            display: block;
+            padding : 0px 1px;
+        }
+        .member2:link{
+            color : #222;
+        }
+        .member2:visited{
+            color : #222;
+        }
+
+nav { 
+    background-color:white;
+    width : inherit;
+    height : 50px;
+    border-bottom : 1px solid #ccc;
+    font-size : 1.3em;
+    position : fixed;
+    top: 100px;
+    
+}
+    #menu_ul{
+        padding : 0;
+        height : 100%;
+        display:flex;
+        align-items : center;
+        justify-content: center;
+
+
+    }
+    .menu_li {
+        list-style-type: none;
+        float : left;
+        width : 33%;
+        text-align : center;
+        display: block;
+        font-family: 'IBM Plex Serif', serif;
+        font-weight: bolder;
+    }
+    .menu {
+        text-decoration: none;
+    }
+    .menu:link {
+        color : #222;
+    }
+    .menu:visited {
+        color : #222;
+    }
+
+body {
+    font-family: 'Hahmlet', serif;
+}
+
+main {
+    width : 90%;
+    min-height : 70vh;
+    margin : auto;
+    margin-top: 150px;
+    
+}
+
+
+/* height : 200px;로 우선 고정  */
+    #main_layer1 {
+        width : 1170px;
+        height : 200px;
+        border-bottom : 1px solid #ccc;
+        position: fixed;
+        top: 150px;
+        background-color: white;
+        margin: auto;
+        
+    }
+        #profile_pic {
+            --background-color: pink;
+            width:35%;
+            height : 100%;
+            display : flex;
+            justify-content: flex-end;
+            float : left;
+        }
+        #base_info {
+            --background-color: lightgoldenrodyellow;
+            width:35%;
+            height : 100%;
+            float : left;
+            --text-align: center;
+        }
+
+            #rukawa {
+                width : 135px;
+                height : 135px;
+                margin : 3vh 2vw 1vw 1vh;
+                border : 2px solid #ccc;
+                border-radius: 100px;
+            }
+
+            #base1 {
+                --background-color: lightgoldenrodyellow;
+                height : 25%;
+                
+
+            }
+            
+            #stw_name{
+                float : left;
+                margin : 20px 5px 0 0;
+            }
+
+
+            /* 찜버튼 */
+            a{
+                text-decoration:none; color:inherit; cursor: pointer;
+            }
+            .right_area .icon{
+                float : left;
+                margin-top : 26px;
+                display: flex;
+                align-items: flex-end;
+                --justify-content: center;
+                --width: calc(100vw * (15 / 1920));
+                --height: calc(100vw * (15 / 1920));
+            
+                border-radius: 50%;
+                --border: solid 2px #eaeaea;
+                background-color: #fff;
+            }
+            
+            .icon.heart img{
+                  width: calc(100vw * (15 / 1920));
+                  height: calc(100vw * (15 / 1920));
+            }
+        
+            .icon.heart.fas{
+                color:red
+            }
+            .heart{
+                transform-origin: center;
+            }
+            .heart.active img{
+                animation: animateHeart .3s linear forwards;
+            }
+            
+            @keyframes animateHeart{
+                0%{transform:scale(.2);}
+                40%{transform:scale(1.2);}
+                100%{transform:scale(1);}
+            }
+            /* 찜버튼 */
+
+
+            /* svg {
+                float : left;
+                margin-top : 26px;
+            } */
+
+
+            #base2 {
+                --background-color: lightblue;
+                --height : 25%;
+                --margin-bottom:10px;
+                    
+                }
+
+            #base3 {
+                --background-color: lightgray;
+                height : 25%;
+                
+                    
+                }
+                #starScr {
+                    float : left;
+                    letter-spacing:-2px;
+                }
+                #reviewCnt {
+                    float : left;
+                    margin-right : 5px;
+                    margin-left : 5px;
+                }
+                #reviewBtn {
+                    float : left;
+                    margin-right : 5px;
+                }
+                    #rv_btn{
+                        background-color: #FFD93D;
+                        width : 50px;
+                        height: 20px;
+                        border : none;
+                        border-radius: 3px;
+                        color : #fff;
+                        font-weight: bold;
+                        padding-bottom :2px;
+                        
+
+                        cursor: pointer;
+                    }
+            #base4 {
+                --background-color: pink;
+                --height : 25%;
+                font-size : 1.2em;
+                line-height: 30px;;
+                
+            }
+            #chat {
+                --background-color: pink;
+                width:30%;
+                float : left;
+
+            }
+                #chat_btn {
+                    background-color: #222;
+                    color : #fff;
+                    font-size : 20px;
+                    font-weight: bold;
+                    width : 230px;
+                    height: 150px;
+                    border-radius: 10px;
+                    margin-top : 25px;
+                    border-style : solid;
+                    font-family: 'Hahmlet', serif;
+                    cursor: pointer;
+                }
+    
+                #chat_btn:active {
+                    background-color: #fff;
+                    color : #222;
+                    width : 230px;
+                    height: 150px;
+                    border-radius: 10px;
+                    margin-top : 25px;
+                    border-style : inset;
+                    font-family: 'Hahmlet', serif;
+                    cursor: pointer;
+                }
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+                #contact {
+                    margin-left: 10px;
+                    color : #E06469;
+                    font-size: 0.6em;
+                    position: relative;
+                    top: -5px;
+                    font-weight: bold;
+                    font-family: 'Noto Sans KR', sans-serif;
+
+                }
+    #main_layer2 {
+        --overflow: auto;
+        margin-top: 350px;
+    }            
+        #main_sec2{
+            background-color: navy;
+        }
+        #sec2-1 {
+            width :100%;
+            height : 50%;
+        }
+            #info {
+                float :left;
+                width : 40%;
+                height : 100%;
+                padding : 3vw;
+                display: flex;
+                justify-content: flex-end;
+
+            }
+                
+            #info_content {
+                float :left;
+                width : 60%;
+                height : 100%;
+                padding : 3vw;
+
+            }
+        #sec2-2 {
+            width :100%;
+            height : 50%;
+
+        }
+            #target {
+                float :left;
+                width : 40%;
+                height : 100%;
+                padding : 3vw;
+                display: flex;
+                justify-content: flex-end;
+
+            }
+
+            #target_content {
+                float :left;
+                width : 60%;
+                height : 100%;
+                padding : 3vw;
+            }
+
+        #main_sec3 {
+            margin : 0;
+            padding-top : 3vw
+        }   
+            #main_sec3_1 {
+                width : 50%;
+                float :left; 
+                padding-top : 2vw
+            }
+                #scr_review{
+                    --float :left; 
+                    --width : 45%;
+                    width : 100%;
+                    height : 180px;
+                    line-height: 50px;
+                    padding-right : 50px;
+                    border-right : 1px solid #ccc;
+                }
+                    #bigScr {
+                        font-size : 1em;
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+                    #bigstar {
+                        font-size : 3em;
+                        color : #FFD93D;
+                        letter-spacing:-4px;
+                        display: flex;
+                        justify-content: flex-end;
+                        
+                    }
+                    #bigScr2 {
+                        font-size : 1.5em;
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+                        #big_scr {
+                            font-size: 1.5em;
+                            padding : 0.5vw;
+                        }
+                        #count {
+                            font-size: 0.8em;
+                            padding-top : 15px;
+                            --margin: 20px;;
+                            display: flex;
+                            justify-content: flex-end;
+                        }
+
+            #main_sec3-2 {
+                width : 50%;
+                float :left;
+                padding-top : 2vw
+            }
+                .rkw{
+                    width: 90px;
+                    height :90px;
+                    border : 2px solid gray;
+                    border-radius: 100px;
+                }
+                
+                #pht_preview1 {
+                    float :left; 
+                    display:block;
+                    width : 90px;
+                    height : 180px;
+                    --padding-left : 50px;
+                    margin: 10px 10px 10px 20px;
+                }
+                #pht_preview2 {
+                    float :left; 
+                    display:block;
+                    width : 90px;
+                    height : 180px;
+                    --padding-left : 10px;
+                    margin: 10px 20px 10px 10px;
+                }
+
+                #txt_review {
+                    width : 80%;
+                    display: flex;
+                    justify-content: center;
+                    
+    
+                }
+                    #review_ul {
+                        margin: 0;
+                        padding: 0;
+                        height: 100%;
+                        text-align: left;
+                    }
+                        .review_li {
+                            list-style-type: none;
+                            width : 100%;
+                            --padding: 20px;
+                            line-height: 25px;
+                            margin : 50px;
+    
+                        }
+                            .revw {
+                                display: flex;
+                                justify-content: center;
+                            }
+                            
+                                .photo{
+                                    float :left;  
+                                    width: 100px;
+                                    height :100px;
+                                }
+
+                                .text {
+                                    float :left;
+                                    padding-left : 50px;
+    
+                                }
+                                    .rv_star {
+                                        letter-spacing:-4px;
+                                    }
+                                    .rv_content {
+                                        text-align: left;
+                                    }
+                                    .rv_date {
+                                        color : gray;
+    
+                                    }
+
+                        #write_rvw {
+                            float : left;
+                        }
+                        #textarea {
+                            width : 300px;
+                            height : 100px;
+                            resize : none;
+                            /* textarea 사이즈고정*/
+                            outline : none; 
+                             /* textarea 킃릭시 테두리 제거 */
+                        }
+                        .review_btn {
+                            float : left;
+
+                            display: flex;
+                            justify-content: flex-end;
+                        }
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #f4f4f4;
+    width : inherit;
+    height : 8vh;
+    margin : 0 auto;
+}
+
+
+

@@ -1,0 +1,318 @@
+#container {
+    width : 1300px;
+    --min-height : 1000px;
+    margin : 0 auto;
+}
+/* 1. 헤더, 나브 높이 vh로 설정  => 관둠  */ 
+/*  높이 픽셀로 고정  */
+header {
+    background-color: white;
+    width : inherit;
+    height: 100px;
+    position : fixed;
+    top: 0px;
+}
+    #header_layer1 {
+        width : 30%;
+        height: inherit;
+        float : left;
+    }
+    #header_layer2 {
+        width : 40%;
+        height: inherit;
+        float : left;
+    }
+        #mainlogo {
+            margin: auto;
+            display: block;
+            width : 90px;
+            height : 90px;
+        }
+    #header_layer3 {
+        width : 30%;
+        height: inherit;
+        float : left;
+        display : flex;
+        justify-content : flex-end;
+        
+    }
+        .member {
+            border : 1px solid #ccc;
+            width : 100px;
+            height : 25px;
+            color : #222;
+            font-size : 0.9em;
+            text-align : center;
+            --justify-content : flex-end;
+            float : left;
+            font-family: 'IBM Plex Serif', serif;
+        }
+        .member2 {
+            text-decoration: none;
+            display: block;
+            padding : 0px 1px;
+        }
+        .member2:link{
+            color : #222;
+        }
+        .member2:visited{
+            color : #222;
+        }
+
+nav { 
+    background-color:white;
+    width : inherit;
+    height : 50px;
+    border-bottom : 1px solid #ccc;
+    font-size : 1.3em;
+    position : fixed;
+    top: 100px;
+    
+}
+    #menu_ul{
+        padding : 0;
+        height : 100%;
+        display:flex;
+        align-items : center;
+        justify-content: center;
+
+
+    }
+    .menu_li {
+        list-style-type: none;
+        float : left;
+        width : 33%;
+        text-align : center;
+        display: block;
+        font-family: 'IBM Plex Serif', serif;
+        font-weight: bolder;
+    }
+    .menu {
+        text-decoration: none;
+    }
+    .menu:link {
+        color : #222;
+    }
+    .menu:visited {
+        color : #222;
+    }
+
+main {
+    width : 90%;
+    min-height : 70vh;
+    margin : auto;
+    margin-top: 150px;
+}
+    
+    #main_layer1 {
+        width : 33%;
+        float: left;
+        padding : 8vh;
+        text-align: center;
+    }
+        #thumb_img {
+            border-radius: 10px;
+            border : 1px dotted #ccc;
+            margin-bottom : 3vh;
+        }
+
+        #calssName_ul{
+            --padding : 0;
+            --height : 100%;
+            --display:flex;
+            --align-items : center;
+            --justify-content: center;
+            list-style-type: none;
+            text-align : center;
+            line-height : 30px;
+            margin-left :  2vh;
+            /* font-family: 'Song Myung', serif; */
+            font-family: 'Hahmlet', serif;
+            letter-spacing:1px;
+            
+        }
+
+    #main_layer2 {
+        --background-color: aqua;
+        width : 33%;
+        height : 100%;
+        float: left;
+
+    }
+        /* #main2-1 {
+            width : 100%;
+            height : 45%;
+            text-align: center;
+        } */
+
+        #calendar {
+            margin-top: 10vh; 
+            width : 100%;
+            height : 45%;
+            text-align: center;
+        }
+
+        /* 달력 */
+        .td {
+            width: 40px;
+            height: 40px;
+        }
+
+        .Calendar { 
+            text-align: center;
+            --margin: 0 auto; 
+            background-color: #fff;
+        }
+
+        .Calendar>thead>tr:first-child>td { font-weight: bold; }
+
+        .Calendar>thead>tr:last-child>td {
+            background-color: gray;
+            color: white;
+        }        
+
+        .pastDay{ background-color: lightgray; }
+
+        .today{            
+            background-color: #FFCA64;            
+            cursor: pointer;
+        }
+
+        .futureDay{            
+            background-color: #FFFFFF;
+            cursor: pointer;
+        }
+
+        .futureDay.choiceDay, .today.choiceDay{            
+            background-color: skyblue;            
+            color: #fff;
+            cursor: pointer;
+        }
+         /* 달력 */
+        
+    
+
+
+    #main_layer3 {
+        width : 34%;
+        height : 100%;
+        float: left;
+    }
+        #main3-1 {
+            width : 100%;
+            height : 70%;
+            --text-align: center;
+        }
+        .rsv_box {
+            margin-top : 5vh;
+        }
+
+            #tbl1 {
+                
+                width : 350px;
+                height : 43px;
+            }
+            #cap1 {
+                margin: 1vh;
+                text-align: center;
+                font-family: 'Hahmlet', serif;
+                letter-spacing:2px;
+
+            }
+            #td1 {
+                border : none;
+                padding : 0;
+            }
+
+
+            #tbl2 {
+                border : none;
+                --border : 1px solid gray;
+                border-collapse: collapse;
+                width : 350px;
+                height : 150px;
+                table-layout: fixed;
+                --margin: 20px;
+            }
+            .reserv_time {
+                margin: 1vh;
+                text-align: center;
+            }
+            select[name=time] {
+                width : 350px;
+                height : 43px;
+                text-align: center;
+                font-size : 1em;
+                --border : none;
+                margin-bottom : 1vh;
+                display:flex;
+                align-items : center;
+                justify-content: center;
+            }
+            #cap2 {
+                margin: 1vh;
+                text-align: center;
+                letter-spacing:2px;
+                font-family: 'Hahmlet', serif;
+            }
+
+            td {
+                border : 1px solid gray;
+            }
+            .td2-1 {
+                width : 100px;
+                background-color: #ccc;
+                text-align: center;
+            }
+            .reserv_input, select[name=number] {
+                width : 100%;
+                height : 100%;
+                border : none;
+                outline: none;
+                text-align: center;
+                font-size : 1em;
+            }
+
+
+
+        #main3-2 {
+            --background-color: lightcyan;
+            width : 100%;
+            height : 30%;
+            display:flex;
+            align-items : center;
+            justify-content: center;
+            margin-top : 10vh;
+        }
+            #submit_btn {
+                color : #FFF;
+                background-color: #222;
+                width : 220px;
+                height : 60px;
+                border-radius: 5px;
+                text-align: center;
+                font-size : 1.2em;
+                margin : 30px auto;
+                border-style : solid;
+                font-family: 'Hahmlet', serif;
+            }
+            #submit_btn:active {
+                color : #222;
+                background-color: #FFF;
+                width : 220px;
+                height : 60px;
+                border-radius: 5px;
+                text-align: center;
+                font-size : 1em;
+                margin : 30px auto;
+                border-style : inset; 
+                font-family: 'Hahmlet', serif;
+            }
+
+footer {
+    background-color: #f4f4f4;
+    width : inherit;
+    height : 8vh;
+    margin : 0 auto;
+}
+

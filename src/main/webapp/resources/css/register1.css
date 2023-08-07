@@ -1,0 +1,257 @@
+#container {
+    width : 1300px;
+    --min-height : 1000px;
+    margin : 0 auto;
+}
+/* 1. 헤더, 나브 높이 vh로 설정  => 관둠  */ 
+/*  높이 픽셀로 고정  */
+header {
+    background-color: white;
+    width : inherit;
+    height: 100px;
+    position : fixed;
+    top: 0px;
+}
+    #header_layer1 {
+        width : 30%;
+        height: inherit;
+        float : left;
+    }
+    #header_layer2 {
+        width : 40%;
+        height: inherit;
+        float : left;
+    }
+        #mainlogo {
+            margin: auto;
+            display: block;
+            width : 90px;
+            height : 90px;
+        }
+    #header_layer3 {
+        width : 30%;
+        height: inherit;
+        float : left;
+        display : flex;
+        justify-content : flex-end;
+        
+    }
+        .member {
+            border : 1px solid #ccc;
+            width : 100px;
+            height : 25px;
+            color : #222;
+            font-size : 0.9em;
+            text-align : center;
+            --justify-content : flex-end;
+            float : left;
+            font-family: 'IBM Plex Serif', serif;
+        }
+        .member2 {
+            text-decoration: none;
+            display: block;
+            padding : 0px 1px;
+        }
+        .member2:link{
+            color : #222;
+        }
+        .member2:visited{
+            color : #222;
+        }
+
+nav { 
+    background-color:white;
+    width : inherit;
+    height : 50px;
+    border-bottom : 1px solid #ccc;
+    font-size : 1.3em;
+    position : fixed;
+    top: 100px;
+    
+}
+    #menu_ul{
+        padding : 0;
+        height : 100%;
+        display:flex;
+        align-items : center;
+        justify-content: center;
+
+
+    }
+    .menu_li {
+        list-style-type: none;
+        float : left;
+        width : 33%;
+        text-align : center;
+        display: block;
+        font-family: 'IBM Plex Serif', serif;
+        font-weight: bolder;
+    }
+    .menu {
+        text-decoration: none;
+    }
+    .menu:link {
+        color : #222;
+    }
+    .menu:visited {
+        color : #222;
+    }
+
+body {
+    font-family: 'Hahmlet', serif;
+}
+
+main {
+    width : 90%;
+    min-height : 70vh;
+    margin : auto;
+    margin-top: 150px;
+}
+    #main-layer1 {
+        height : 100px;
+        text-align: center;
+        padding-top: 3vh;
+    }
+    #main-layer2 {
+        height : 250px;
+        text-align: center;
+    }
+        #textarea {
+            background-color: #fff;
+            border : 1px solid #9c9c9c;
+            border-radius: 5px;
+            width : 520px;
+            height : 225px;
+            display : block;
+            margin : auto;
+        }
+            input[type=checkbox] {
+                float : left;
+                margin : 5px;
+            }
+            
+            #agree {
+                display : inline-block;
+                width : 520px;
+                font-size: 12px;
+                text-align: left;
+                
+                position: relative;
+                top: -23px;
+                /*position: relative; top: -20px; 
+                이거 먹이니까 div 및에 텍스트 붙일수 있었음  왜???*/
+                vertical-align:-1px;
+                /* 버튼위치랑 텍스트 라인 정렬이라고 하는데.....안도ㅓㅣ는듟  */
+            }
+
+
+    #findBox { 
+        box-sizing : border-box;
+        width : 400px;
+        height : 100px;
+        margin : 1vh auto;
+
+    }
+
+    #box_header2 {
+        width : 100%;
+        height : 60%;
+        text-align: center;
+    }
+
+        #check_member { 
+            width : 25%;
+            float : left;
+            margin : 30px 0px 0px 0px;
+
+        }
+        #check_phone { 
+            width : 190px;
+            height : 25px;
+            float : left;
+            margin-top : 30px;
+            
+            
+        }
+            #checkNum {
+                width: 100%;
+                height: 100%;
+                margin : 0;
+                padding-left: 3px;
+                outline : none; 
+                /* 인풋박스 클릭시 테두리 라인 없애기 */  
+            }
+        #check_btn { 
+            width : 25%;
+            float : left;
+            margin-top : 30px;
+        }
+            #btn { 
+                color : #FFF;
+                background-color: #222;
+                border-radius: 3px;
+                font-size: 0.7em;
+                padding: 2px;
+                border-style : solid;
+            }
+            #btn:active { 
+                color : #222;
+                background-color: #FFF;
+                border-radius: 3px;
+                font-size: 0.7em;
+                padding: 2px;
+                border-style : inset; 
+            }
+
+
+    #main-layer4 {
+        height : 100px;
+        text-align: center;
+    }
+
+        #posi-chk2{
+            margin-left : -16px;
+        }
+
+
+
+    #main-layer5 {
+        height : 100px;
+        text-align: center;
+    }
+
+        #next_btn { 
+            color : #FFF;
+            background-color: #222;
+            font-size: 1.2m;
+            padding: 2px;
+            text-align: center;
+            line-height: 1px;
+            width: 115px;
+            height: 40px;
+            border-radius: 100px;
+            border-style : solid; 
+        }
+        #next_btn:active { 
+            color : #222;
+            background-color: #FFF;
+            font-size: 1.2m;
+            padding: 2px;
+            text-align: center;
+            line-height: 1px;
+            width: 115px;
+            height: 40px;
+            border-radius: 100px;
+            border-style : inset; 
+        }
+
+
+footer {
+    background-color: #f4f4f4;
+    width : inherit;
+    height : 8vh;
+    margin : 0 auto;
+}
+
+
+
